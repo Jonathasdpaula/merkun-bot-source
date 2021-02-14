@@ -3,6 +3,7 @@ from start_menu import menu
 from consulta_ip import ip
 from consulta_bin import bin
 from consulta_placa import placa
+from consulta_cep import cep
 
 bot = telebot.TeleBot(
     token='SEU TOKEN AQUI')
@@ -32,6 +33,10 @@ def consulta_placa(message):
 
     bot.reply_to(message, placa(message))
 
+@bot.message_handler(commands=['cep'])
+def consulta_placa(message):
+
+    bot.reply_to(message, cep(message))
 
 if __name__ == '__main__':
 

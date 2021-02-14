@@ -5,4 +5,5 @@ Comandos disponiveis:
 /start: Para mostrar o menu
 /ip: Para consultar IP
 /bin: Para consultar Bin
-/placa: Para consultar Placa Veicular"""
+/placa: Para consultar Placa Veicular
+/cep: Para consultar CEP"""
