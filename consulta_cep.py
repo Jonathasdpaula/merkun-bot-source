@@ -12,7 +12,7 @@ def cep(message):
 
         return f'''
 CEP: {cep}
-Município: {cidade}-{uf}
+Município: {cidade} - {uf}
 Vizinhança: {vizinhanca}
 Rua: {rua}'''
 
