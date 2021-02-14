@@ -18,4 +18,4 @@ Estado: {request.get('regionName')}
 Cidade: {request.get('city')}
 Provedor: {request.get('isp')}'''
      else:
-        return 'CEP invalido'
+        return 'IP invalido'
