@@ -23,7 +23,7 @@ Marca: {marca}
 Ano: {ano}/{anoModelo}
 Cor: {cor}
 Situacao: {situacao}
-Municipio: {cidade.title()}-{uf}
+Municipio: {cidade.title()} - {uf}
 Chassi: {chassi}'''
 
     except(ValueError, AttributeError):
