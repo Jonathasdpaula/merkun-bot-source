@@ -1,7 +1,6 @@
-import requests
-
+import requests                                         
 def placa(message):
-    
+
     message = message.text.replace('/placa ', '').replace('-', '')
 
 
