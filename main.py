@@ -1,4 +1,4 @@
-import telebot
+import telebot                     
 from start_menu import menu
 from consulta_ip import ip
 from consulta_bin import bin
@@ -7,7 +7,7 @@ from consulta_placa import placa
 bot = telebot.TeleBot(
     token='SEU TOKEN AQUI')
 
- 
+
 @bot.message_handler(commands=['start'])
 def startmenu(message):
 
@@ -34,5 +34,5 @@ def consulta_placa(message):
 
 
 if __name__ == '__main__':
- 
+
     bot.polling(none_stop=True)
