@@ -39,5 +39,4 @@ def consulta_placa(message):
     bot.reply_to(message, cep(message))
 
 if __name__=='__main__':
-    while True:
-        bot.polling(none_stop=True)
+    bot.polling(none_stop=True)
