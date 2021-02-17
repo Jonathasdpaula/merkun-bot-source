@@ -6,4 +6,6 @@ Comandos disponiveis:
 /ip: Para consultar IP
 /bin: Para consultar Bin
 /placa: Para consultar Placa Veicular
-/cep: Para consultar CEP"""
+/cep: Para consultar CEP
+/gerarcpf: Para gerar CPF
+/gerarcnpj: Para gerar CNPJ"""

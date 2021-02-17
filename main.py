@@ -1,9 +1,11 @@
 import telebot                     
 from start_menu import menu
-from consulta_ip import ip
-from consulta_bin import bin
-from consulta_placa import placa
-from consulta_cep import cep
+from consultar_ip import ip
+from consultar_bin import bin
+from consultar_placa import placa
+from consultar_cep import cep
+from gerar_cpf import gen_cpf
+from gerar_cnpj import gen_cnpj
 
 bot = telebot.TeleBot(
     token='SEU TOKEN AQUI')
@@ -37,6 +39,16 @@ def consulta_placa(message):
 def consulta_placa(message):
 
     bot.reply_to(message, cep(message))
+
+@bot.message_handler(commands=['gerarcpf'])
+def gera_cpf(message):
+
+    bot.reply_to(message, gen_cpf(message))
+
+@bot.message_handler(commands=['gerarcnpj'])
+def gera_cpf(message):
+
+    bot.reply_to(message, gen_cnpj(message))
 
 if __name__=='__main__':
     bot.polling(none_stop=True)
