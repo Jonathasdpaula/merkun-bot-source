@@ -6,6 +6,7 @@ from consultar_placa import placa
 from consultar_cep import cep
 from gerar_cpf import gen_cpf
 from gerar_cnpj import gen_cnpj
+from covid import covid
 
 bot = telebot.TeleBot(
     token='SEU TOKEN AQUI')
@@ -49,6 +50,11 @@ def gera_cpf(message):
 def gera_cpf(message):
 
     bot.reply_to(message, gen_cnpj(message))
+
+@bot.message_handler(commands=['covid'])
+def gera_cp(message):
+
+    bot.reply_to(message, covid(message))
 
 if __name__=='__main__':
     bot.polling(none_stop=True)

@@ -4,8 +4,9 @@ def menu():
 Comandos disponiveis:
 /start: Para mostrar o menu
 /ip: Para consultar IP
-/bin: Para consultar Bin
+/bin: Para consultar BIN
 /placa: Para consultar Placa Veicular
 /cep: Para consultar CEP
 /gerarcpf: Para gerar CPF
-/gerarcnpj: Para gerar CNPJ"""
+/gerarcnpj: Para gerar CNPJ
+/covid: Para mostrar estáticas mundiais de COVID-19"""
