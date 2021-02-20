@@ -1,9 +1,11 @@
 import requests
 
+
 def bin(message):
 
     try:
-        request = requests.get('https://lookup.binlist.net/' + message.text.replace('/bin ', '')).json()
+        request = requests.get(
+            'https://lookup.binlist.net/' + message.text.replace('/bin ', '')).json()
         band = request.get('scheme')
         tipo = request.get('type')
         pais = request.get('country')

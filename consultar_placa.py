@@ -1,11 +1,13 @@
-import requests                                         
+import requests
+
+
 def placa(message):
 
     message = message.text.replace('/placa ', '').replace('-', '')
 
-
     try:
-        request = requests.get(f'http://api.masterplaca.devplank.com/v2/placa/{message}/json').json()
+        request = requests.get(
+            f'http://api.masterplaca.devplank.com/v2/placa/{message}/json').json()
         modelo = request.get('modelo')
         marca = request.get('marca')
         ano = request.get('ano')
