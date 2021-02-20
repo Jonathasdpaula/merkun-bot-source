@@ -7,7 +7,7 @@ def placa(message):
 
     try:
         request = requests.get(
-            f'http://api.masterplaca.devplank.com/v2/placa/{message}/json').json()
+            f'https://apicarros.com/v2/consultas/{message}/SEU TOKEN AQUI', verify=False).json()
         modelo = request.get('modelo')
         marca = request.get('marca')
         ano = request.get('ano')
