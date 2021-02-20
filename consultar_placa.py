@@ -3,7 +3,7 @@ import requests
 
 def placa(message):
 
-    message = message.text.replace('/placa ', '').replace('-', '')
+    message = message.text.replace('@merkun_bot', '').replace('/placa ', '').replace('-', '')
 
     try:
         request = requests.get(

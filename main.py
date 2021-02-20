@@ -12,7 +12,7 @@ bot = telebot.TeleBot(
     token='SEU TOKEN AQUI')
 
 
-@bot.message_handler(commands=['start'])
+@bot.message_handler(commands=['start', 'menu'])
 def startmenu(message):
 
     bot.reply_to(message, menu())

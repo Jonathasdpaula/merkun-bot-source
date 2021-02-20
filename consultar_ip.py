@@ -4,7 +4,7 @@ import requests
 def ip(message):
 
     request = requests.get('http://ip-api.com/json/' + message.text.replace(
-        'https://', '').replace('http://', '').replace('/ip ', '')).json()
+        'https://', '').replace('http://', '').replace('@merkun_bot', '').replace('/ip ', '')).json()
 
     if 'message' not in request:
 
