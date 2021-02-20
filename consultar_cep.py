@@ -9,7 +9,8 @@ def cep(message):
     if 'message' not in request:
         cep = request.get('cep')
         cidade = request.get('city')
-        uf = request.get('state')                                                        vizinhanca = request.get('neighborhood')
+        uf = request.get('state')
+        vizinhanca = request.get('neighborhood')
         rua = request.get('street')
 
         return f'''
